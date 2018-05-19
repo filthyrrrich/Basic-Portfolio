@@ -3,50 +3,50 @@
     
     <head>
         <meta charset="UTF_8">
-
         <title>Portfolio</title>
-       
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-       
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">  
     </head>
 
     <body>
-            <header>
+        <header>
+            <div class="headcont">
                 <div id="logo">
                     <h1>Rich Schiffer</h1>
                 </div>
                 <div id="nav">
                     <ul>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>      
-                        <li><a href="contact.html">Contact</a></li>   
+                        <li>
+                            <a class="nav-btn-border" href="index.html">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-btn-border" href="portfolio.html">Portfolio</a>
+                        </li>      
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>   
                     </ul> 
-                </div>  
-            </header>
-                
-            <div class="container">
-   
-                <h2>Contact</h2>
-                <hr>
-                <form action="action_page.php">
-                    <ul>
-                        <li>
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" size "40" placeholder="John Smith" required="required">
-                        </li><br>
-                        <li>
-                            <label for="email">Email</label>
-                            <input type="text" id="email" name="email" placeholder="example@gmail.com" required="required">
-                        </li><br>
-                        <li>
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required="required"></textarea>
-                    </li><br>
-                    </ul>  
-                    <input type="submit" value="Submit">  
-                </form>
+                </div>
             </div>  
-            <footer>Copyright&copy;</footer>
-        </body>
-    </html>
+        </header>
+                
+        <div class="container">
+            <h2>Contact</h2>
+            <hr>
+            <form action="action_page.php">
+                <label for="name">Name</label>
+                    <input type="text" id="name" name="name" style="height:25px" placeholder="John Smith" required="required">
+            <br>
+                <label for="email">Email</label>
+                    <input type="text" id="email" name="email" style="height:25px" placeholder="example@gmail.com" required="required">
+            <br>
+                <label for="message">Message</label>
+                    <textarea id="message" name="message" style="height:200px"required="required"></textarea>
+            <br>
+                    <input type="submit" value="Submit">  
+            </form>
+        </div>  
+
+        <footer>Copyright&copy;</footer>
+    </body>
+</html>
